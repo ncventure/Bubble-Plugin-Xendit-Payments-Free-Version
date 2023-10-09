@@ -1,0 +1,349 @@
+{
+    "auth": "basic_auth",
+    "calls": {
+        "AAC": {
+            "body": "{\n     \"reference_id\": \"demo3_147358019362607\",\n     \"type\": \"INDIVIDUAL\",\n     \"individual_detail\": {\n       \"given_names\": \"John\",\n       \"surname\": \"Doe\"\n     },\n     \"email\": \"customer@website.com\",\n     \"mobile_number\": \"+628121234567890\"\n     }",
+            "doc_link": "https://developers.xendit.co/api-reference/#create-customer",
+            "headers": {
+                "AAF": {
+                    "doc": "The sub-account user-id that you want to make this transaction for. This header is only used if you have access to xenPlatform. See xenPlatform for more information",
+                    "key": "for-user-id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Customers API - Create a Customer",
+            "params": {
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Customers API - Create a Customer\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"INDIVIDUAL\",\"path\":[\"type\"]},\"_p_date_of_registration\":{\"ret_value\":\"date\",\"caption\":\"date_of_registration\",\"sample_value\":null,\"path\":[\"date_of_registration\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"customer@website.com\",\"path\":[\"email\"]},\"_p_mobile_number\":{\"ret_value\":\"text\",\"caption\":\"mobile_number\",\"sample_value\":\"+628121234567890\",\"path\":[\"mobile_number\"]},\"_p_phone_number\":{\"ret_value\":\"text\",\"caption\":\"phone_number\",\"sample_value\":null,\"path\":[\"phone_number\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2023-10-09T15:09:02.865Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-10-09T15:09:02.865Z\",\"path\":[\"updated\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":null,\"path\":[\"description\"]},\"_p_hashed_phone_number\":{\"ret_value\":\"text\",\"caption\":\"hashed_phone_number\",\"sample_value\":null,\"path\":[\"hashed_phone_number\"]},\"_p_domicile_of_registration\":{\"ret_value\":\"text\",\"caption\":\"domicile_of_registration\",\"sample_value\":null,\"path\":[\"domicile_of_registration\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"cust-fe8cf70c-1bcd-4e39-8e13-d647739442e7\",\"path\":[\"id\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"demo3_147358019362607\",\"path\":[\"reference_id\"]},\"_p_metadata\":{\"ret_value\":\"text\",\"caption\":\"metadata\",\"sample_value\":null,\"path\":[\"metadata\"]},\"_p_individual_detail.given_names\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names\",\"sample_value\":\"John\",\"path\":[\"individual_detail\",\"given_names\"]},\"_p_individual_detail.given_names_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"given_names_non_roman\"]},\"_p_individual_detail.surname\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname\",\"sample_value\":\"Doe\",\"path\":[\"individual_detail\",\"surname\"]},\"_p_individual_detail.surname_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"surname_non_roman\"]},\"_p_individual_detail.nationality\":{\"ret_value\":\"text\",\"caption\":\"individual_detail nationality\",\"sample_value\":null,\"path\":[\"individual_detail\",\"nationality\"]},\"_p_individual_detail.date_of_birth\":{\"ret_value\":\"date\",\"caption\":\"individual_detail date_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"date_of_birth\"]},\"_p_individual_detail.place_of_birth\":{\"ret_value\":\"text\",\"caption\":\"individual_detail place_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"place_of_birth\"]},\"_p_individual_detail.gender\":{\"ret_value\":\"text\",\"caption\":\"individual_detail gender\",\"sample_value\":null,\"path\":[\"individual_detail\",\"gender\"]},\"_p_individual_detail.employment\":{\"ret_value\":\"text\",\"caption\":\"individual_detail employment\",\"sample_value\":null,\"path\":[\"individual_detail\",\"employment\"]},\"_p_business_detail\":{\"ret_value\":\"text\",\"caption\":\"business_detail\",\"sample_value\":null,\"path\":[\"business_detail\"]}}}}",
+            "url": "https://api.xendit.co/customers"
+        },
+        "AAG": {
+            "headers": {
+                "AAL": {
+                    "doc": "The sub-account user-id that you want to make this transaction for. This header is only used if you have access to xenPlatform. See xenPlatform for more information",
+                    "key": "for-user-id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Customers API - Get Customer by ID",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAG",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAG\":{\"caption\":\"Customers API - Get Customer by ID\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"INDIVIDUAL\",\"path\":[\"type\"]},\"_p_date_of_registration\":{\"ret_value\":\"date\",\"caption\":\"date_of_registration\",\"sample_value\":null,\"path\":[\"date_of_registration\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"customer@website.com\",\"path\":[\"email\"]},\"_p_mobile_number\":{\"ret_value\":\"text\",\"caption\":\"mobile_number\",\"sample_value\":\"+628121234567890\",\"path\":[\"mobile_number\"]},\"_p_phone_number\":{\"ret_value\":\"text\",\"caption\":\"phone_number\",\"sample_value\":null,\"path\":[\"phone_number\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2023-10-09T14:58:56.858Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-10-09T14:58:56.858Z\",\"path\":[\"updated\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":null,\"path\":[\"description\"]},\"_p_hashed_phone_number\":{\"ret_value\":\"text\",\"caption\":\"hashed_phone_number\",\"sample_value\":null,\"path\":[\"hashed_phone_number\"]},\"_p_domicile_of_registration\":{\"ret_value\":\"text\",\"caption\":\"domicile_of_registration\",\"sample_value\":null,\"path\":[\"domicile_of_registration\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"cust-9140fcf5-5be2-4ac5-b15a-ca4d0fa25445\",\"path\":[\"id\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"demo_14735801962607\",\"path\":[\"reference_id\"]},\"_p_metadata\":{\"ret_value\":\"text\",\"caption\":\"metadata\",\"sample_value\":null,\"path\":[\"metadata\"]},\"_p_individual_detail.given_names\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names\",\"sample_value\":\"John\",\"path\":[\"individual_detail\",\"given_names\"]},\"_p_individual_detail.given_names_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"given_names_non_roman\"]},\"_p_individual_detail.surname\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname\",\"sample_value\":\"Doe\",\"path\":[\"individual_detail\",\"surname\"]},\"_p_individual_detail.surname_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"surname_non_roman\"]},\"_p_individual_detail.nationality\":{\"ret_value\":\"text\",\"caption\":\"individual_detail nationality\",\"sample_value\":null,\"path\":[\"individual_detail\",\"nationality\"]},\"_p_individual_detail.date_of_birth\":{\"ret_value\":\"date\",\"caption\":\"individual_detail date_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"date_of_birth\"]},\"_p_individual_detail.place_of_birth\":{\"ret_value\":\"text\",\"caption\":\"individual_detail place_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"place_of_birth\"]},\"_p_individual_detail.gender\":{\"ret_value\":\"text\",\"caption\":\"individual_detail gender\",\"sample_value\":null,\"path\":[\"individual_detail\",\"gender\"]},\"_p_individual_detail.employment\":{\"ret_value\":\"text\",\"caption\":\"individual_detail employment\",\"sample_value\":null,\"path\":[\"individual_detail\",\"employment\"]},\"_p_business_detail\":{\"ret_value\":\"text\",\"caption\":\"business_detail\",\"sample_value\":null,\"path\":[\"business_detail\"]}}}}",
+            "url": "https://api.xendit.co/customers/[id]",
+            "url_params": {
+                "AAO": {
+                    "key": "id",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAN": {
+            "0": "A",
+            "1": "A",
+            "2": "M",
+            "headers": {
+                "AAL": {
+                    "doc": "The sub-account user-id that you want to make this transaction for. This header is only used if you have access to xenPlatform. See xenPlatform for more information",
+                    "key": "for-user-id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "Customers API - Get Customer by ID",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAN",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAN\":{\"caption\":\"Customers API - Get Customer by ID\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"INDIVIDUAL\",\"path\":[\"type\"]},\"_p_date_of_registration\":{\"ret_value\":\"date\",\"caption\":\"date_of_registration\",\"sample_value\":null,\"path\":[\"date_of_registration\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"customer@website.com\",\"path\":[\"email\"]},\"_p_mobile_number\":{\"ret_value\":\"text\",\"caption\":\"mobile_number\",\"sample_value\":\"+628121234567890\",\"path\":[\"mobile_number\"]},\"_p_phone_number\":{\"ret_value\":\"text\",\"caption\":\"phone_number\",\"sample_value\":null,\"path\":[\"phone_number\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2023-10-09T14:58:56.858Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-10-09T14:58:56.858Z\",\"path\":[\"updated\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":null,\"path\":[\"description\"]},\"_p_hashed_phone_number\":{\"ret_value\":\"text\",\"caption\":\"hashed_phone_number\",\"sample_value\":null,\"path\":[\"hashed_phone_number\"]},\"_p_domicile_of_registration\":{\"ret_value\":\"text\",\"caption\":\"domicile_of_registration\",\"sample_value\":null,\"path\":[\"domicile_of_registration\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"cust-9140fcf5-5be2-4ac5-b15a-ca4d0fa25445\",\"path\":[\"id\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"demo_14735801962607\",\"path\":[\"reference_id\"]},\"_p_metadata\":{\"ret_value\":\"text\",\"caption\":\"metadata\",\"sample_value\":null,\"path\":[\"metadata\"]},\"_p_individual_detail.given_names\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names\",\"sample_value\":\"John\",\"path\":[\"individual_detail\",\"given_names\"]},\"_p_individual_detail.given_names_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"given_names_non_roman\"]},\"_p_individual_detail.surname\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname\",\"sample_value\":\"Doe\",\"path\":[\"individual_detail\",\"surname\"]},\"_p_individual_detail.surname_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"surname_non_roman\"]},\"_p_individual_detail.nationality\":{\"ret_value\":\"text\",\"caption\":\"individual_detail nationality\",\"sample_value\":null,\"path\":[\"individual_detail\",\"nationality\"]},\"_p_individual_detail.date_of_birth\":{\"ret_value\":\"date\",\"caption\":\"individual_detail date_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"date_of_birth\"]},\"_p_individual_detail.place_of_birth\":{\"ret_value\":\"text\",\"caption\":\"individual_detail place_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"place_of_birth\"]},\"_p_individual_detail.gender\":{\"ret_value\":\"text\",\"caption\":\"individual_detail gender\",\"sample_value\":null,\"path\":[\"individual_detail\",\"gender\"]},\"_p_individual_detail.employment\":{\"ret_value\":\"text\",\"caption\":\"individual_detail employment\",\"sample_value\":null,\"path\":[\"individual_detail\",\"employment\"]},\"_p_business_detail\":{\"ret_value\":\"text\",\"caption\":\"business_detail\",\"sample_value\":null,\"path\":[\"business_detail\"]}}}}",
+            "url": "https://api.xendit.co/customers/[id]",
+            "url_params": {
+                "AAP": {
+                    "key": "id",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAQ": {
+            "body": "{\n     \"individual_detail\": {\n       \"given_names\": \"Jane\",\n       \"surname\": \"Doe\"\n     }\n     }",
+            "initialized": true,
+            "method": "patch",
+            "name": "Customers API - Update Customer",
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAQ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAQ\":{\"caption\":\"Customers API - Update Customer\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"INDIVIDUAL\",\"path\":[\"type\"]},\"_p_date_of_registration\":{\"ret_value\":\"date\",\"caption\":\"date_of_registration\",\"sample_value\":null,\"path\":[\"date_of_registration\"]},\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"customer@website.com\",\"path\":[\"email\"]},\"_p_mobile_number\":{\"ret_value\":\"text\",\"caption\":\"mobile_number\",\"sample_value\":\"+628121234567890\",\"path\":[\"mobile_number\"]},\"_p_phone_number\":{\"ret_value\":\"text\",\"caption\":\"phone_number\",\"sample_value\":null,\"path\":[\"phone_number\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2023-10-09T15:01:37.680Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-10-09T15:02:02.764Z\",\"path\":[\"updated\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":null,\"path\":[\"description\"]},\"_p_hashed_phone_number\":{\"ret_value\":\"text\",\"caption\":\"hashed_phone_number\",\"sample_value\":null,\"path\":[\"hashed_phone_number\"]},\"_p_domicile_of_registration\":{\"ret_value\":\"text\",\"caption\":\"domicile_of_registration\",\"sample_value\":null,\"path\":[\"domicile_of_registration\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"cust-1954418e-77dc-4942-8bc6-fd0357b6f9a9\",\"path\":[\"id\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"demo_147358019362607\",\"path\":[\"reference_id\"]},\"_p_metadata\":{\"ret_value\":\"text\",\"caption\":\"metadata\",\"sample_value\":null,\"path\":[\"metadata\"]},\"_p_individual_detail.given_names\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names\",\"sample_value\":\"Jane\",\"path\":[\"individual_detail\",\"given_names\"]},\"_p_individual_detail.given_names_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail given_names_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"given_names_non_roman\"]},\"_p_individual_detail.surname\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname\",\"sample_value\":\"Doe\",\"path\":[\"individual_detail\",\"surname\"]},\"_p_individual_detail.surname_non_roman\":{\"ret_value\":\"text\",\"caption\":\"individual_detail surname_non_roman\",\"sample_value\":null,\"path\":[\"individual_detail\",\"surname_non_roman\"]},\"_p_individual_detail.nationality\":{\"ret_value\":\"text\",\"caption\":\"individual_detail nationality\",\"sample_value\":null,\"path\":[\"individual_detail\",\"nationality\"]},\"_p_individual_detail.date_of_birth\":{\"ret_value\":\"date\",\"caption\":\"individual_detail date_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"date_of_birth\"]},\"_p_individual_detail.place_of_birth\":{\"ret_value\":\"text\",\"caption\":\"individual_detail place_of_birth\",\"sample_value\":null,\"path\":[\"individual_detail\",\"place_of_birth\"]},\"_p_individual_detail.gender\":{\"ret_value\":\"text\",\"caption\":\"individual_detail gender\",\"sample_value\":null,\"path\":[\"individual_detail\",\"gender\"]},\"_p_individual_detail.employment\":{\"ret_value\":\"text\",\"caption\":\"individual_detail employment\",\"sample_value\":null,\"path\":[\"individual_detail\",\"employment\"]},\"_p_business_detail\":{\"ret_value\":\"text\",\"caption\":\"business_detail\",\"sample_value\":null,\"path\":[\"business_detail\"]}}}}",
+            "url": "https://api.xendit.co/customers/[id]",
+            "url_params": {
+                "AAR": {
+                    "key": "id",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAT": {
+            "0": "A",
+            "1": "A",
+            "2": "S",
+            "body": "{\n     \"individual_detail\": {\n       \"given_names\": \"Jane\",\n       \"surname\": \"Doe\"\n     }\n     }",
+            "initialized": true,
+            "method": "get",
+            "name": "Transactions - List Transactions",
+            "params": {
+                "AAY": {
+                    "allow_blank": true,
+                    "doc": "Reference that will be searched. Search by reference is case sensitive and can be partial match.\n",
+                    "key": "reference_id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAZ": {
+                    "allow_blank": true,
+                    "doc": "Product_id that will be searched. Product_id search is an exact match and case sensitive.\n",
+                    "key": "product_id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAa": {
+                    "allow_blank": true,
+                    "doc": "Account identifier that will be searched. Account identifier search is exact match case sensitive.",
+                    "key": "account_identifier",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAb": {
+                    "allow_blank": true,
+                    "doc": "Currency to filter. See our supported currencies. default: IDR\n",
+                    "key": "currency",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAc": {
+                    "allow_blank": true,
+                    "doc": "Transaction amount to search. This will be exact match.\n",
+                    "key": "amount",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 4,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAT",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAT\":{\"caption\":\"Transactions - List Transaction\",\"fields\":{\"_p_has_more\":{\"ret_value\":\"boolean\",\"caption\":\"has_more\",\"sample_value\":false,\"path\":[\"has_more\"]},\"_p_data\":{\"ret_value\":\"list.api.1696862739974x657171231604211700.plugin_api.AAT.data\",\"caption\":\"data\",\"path\":[\"data\"]}}},\"plugin_api.AAT.data\":{\"caption\":\"Transactions - List Transactions data\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"txn_11d2cf6b-d16d-495f-b433-c966908077ab\",\"path\":[\"id\"]},\"_p_product_id\":{\"ret_value\":\"text\",\"caption\":\"product_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"product_id\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"TOPUP\",\"path\":[\"type\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"SUCCESS\",\"path\":[\"status\"]},\"_p_channel_category\":{\"ret_value\":\"text\",\"caption\":\"channel_category\",\"sample_value\":\"BANK\",\"path\":[\"channel_category\"]},\"_p_channel_code\":{\"ret_value\":\"text\",\"caption\":\"channel_code\",\"sample_value\":null,\"path\":[\"channel_code\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"reference_id\"]},\"_p_account_identifier\":{\"ret_value\":\"text\",\"caption\":\"account_identifier\",\"sample_value\":null,\"path\":[\"account_identifier\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"IDR\",\"path\":[\"currency\"]},\"_p_amount\":{\"ret_value\":\"number\",\"caption\":\"amount\",\"sample_value\":1000000000,\"path\":[\"amount\"]},\"_p_net_amount\":{\"ret_value\":\"number\",\"caption\":\"net_amount\",\"sample_value\":1000000000,\"path\":[\"net_amount\"]},\"_p_cashflow\":{\"ret_value\":\"text\",\"caption\":\"cashflow\",\"sample_value\":\"MONEY_IN\",\"path\":[\"cashflow\"]},\"_p_settlement_status\":{\"ret_value\":\"text\",\"caption\":\"settlement_status\",\"sample_value\":\"SETTLED\",\"path\":[\"settlement_status\"]},\"_p_estimated_settlement_time\":{\"ret_value\":\"date_unix\",\"caption\":\"estimated_settlement_time\",\"sample_value\":\"2023-06-02T11:06:40.921Z\",\"path\":[\"estimated_settlement_time\"]},\"_p_business_id\":{\"ret_value\":\"text\",\"caption\":\"business_id\",\"sample_value\":\"6479cd376f3f7add15ce89ef\",\"path\":[\"business_id\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"updated\"]},\"_p_fee.xendit_fee\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_fee\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_fee\"]},\"_p_fee.value_added_tax\":{\"ret_value\":\"number\",\"caption\":\"fee value_added_tax\",\"sample_value\":0,\"path\":[\"fee\",\"value_added_tax\"]},\"_p_fee.xendit_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_withholding_tax\"]},\"_p_fee.third_party_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee third_party_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"third_party_withholding_tax\"]},\"_p_fee.status\":{\"ret_value\":\"text\",\"caption\":\"fee status\",\"sample_value\":\"COMPLETED\",\"path\":[\"fee\",\"status\"]}}}}",
+            "url": "https://api.xendit.co/transactions"
+        },
+        "AAe": {
+            "0": "A",
+            "1": "A",
+            "2": "d",
+            "body": "{\n     \"individual_detail\": {\n       \"given_names\": \"Jane\",\n       \"surname\": \"Doe\"\n     }\n     }",
+            "initialized": true,
+            "method": "get",
+            "name": "Transactions - List Transactions",
+            "params": {
+                "AAY": {
+                    "allow_blank": true,
+                    "doc": "Reference that will be searched. Search by reference is case sensitive and can be partial match.\n",
+                    "key": "reference_id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAZ": {
+                    "allow_blank": true,
+                    "doc": "Product_id that will be searched. Product_id search is an exact match and case sensitive.\n",
+                    "key": "product_id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAa": {
+                    "allow_blank": true,
+                    "doc": "Account identifier that will be searched. Account identifier search is exact match case sensitive.",
+                    "key": "account_identifier",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAb": {
+                    "allow_blank": true,
+                    "doc": "Currency to filter. See our supported currencies. default: IDR\n",
+                    "key": "currency",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAc": {
+                    "allow_blank": true,
+                    "doc": "Transaction amount to search. This will be exact match.\n",
+                    "key": "amount",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 5,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAe",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AAe\":{\"caption\":\"Transactions - List Transaction\",\"fields\":{\"_p_has_more\":{\"ret_value\":\"boolean\",\"caption\":\"has_more\",\"sample_value\":false,\"path\":[\"has_more\"]},\"_p_data\":{\"ret_value\":\"list.api.1696862739974x657171231604211700.plugin_api.AAe.data\",\"caption\":\"data\",\"path\":[\"data\"]}}},\"plugin_api.AAe.data\":{\"caption\":\"Transactions - List Transactions data\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"txn_11d2cf6b-d16d-495f-b433-c966908077ab\",\"path\":[\"id\"]},\"_p_product_id\":{\"ret_value\":\"text\",\"caption\":\"product_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"product_id\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"TOPUP\",\"path\":[\"type\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"SUCCESS\",\"path\":[\"status\"]},\"_p_channel_category\":{\"ret_value\":\"text\",\"caption\":\"channel_category\",\"sample_value\":\"BANK\",\"path\":[\"channel_category\"]},\"_p_channel_code\":{\"ret_value\":\"text\",\"caption\":\"channel_code\",\"sample_value\":null,\"path\":[\"channel_code\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"reference_id\"]},\"_p_account_identifier\":{\"ret_value\":\"text\",\"caption\":\"account_identifier\",\"sample_value\":null,\"path\":[\"account_identifier\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"IDR\",\"path\":[\"currency\"]},\"_p_amount\":{\"ret_value\":\"number\",\"caption\":\"amount\",\"sample_value\":1000000000,\"path\":[\"amount\"]},\"_p_net_amount\":{\"ret_value\":\"number\",\"caption\":\"net_amount\",\"sample_value\":1000000000,\"path\":[\"net_amount\"]},\"_p_cashflow\":{\"ret_value\":\"text\",\"caption\":\"cashflow\",\"sample_value\":\"MONEY_IN\",\"path\":[\"cashflow\"]},\"_p_settlement_status\":{\"ret_value\":\"text\",\"caption\":\"settlement_status\",\"sample_value\":\"SETTLED\",\"path\":[\"settlement_status\"]},\"_p_estimated_settlement_time\":{\"ret_value\":\"text\",\"caption\":\"estimated_settlement_time\",\"sample_value\":\"2023-06-02T11:06:40.921Z\",\"path\":[\"estimated_settlement_time\"]},\"_p_business_id\":{\"ret_value\":\"text\",\"caption\":\"business_id\",\"sample_value\":\"6479cd376f3f7add15ce89ef\",\"path\":[\"business_id\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"updated\"]},\"_p_fee.xendit_fee\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_fee\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_fee\"]},\"_p_fee.value_added_tax\":{\"ret_value\":\"number\",\"caption\":\"fee value_added_tax\",\"sample_value\":0,\"path\":[\"fee\",\"value_added_tax\"]},\"_p_fee.xendit_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_withholding_tax\"]},\"_p_fee.third_party_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee third_party_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"third_party_withholding_tax\"]},\"_p_fee.status\":{\"ret_value\":\"text\",\"caption\":\"fee status\",\"sample_value\":\"COMPLETED\",\"path\":[\"fee\",\"status\"]}}}}",
+            "url": "https://api.xendit.co/transactions"
+        },
+        "AAg": {
+            "0": "A",
+            "1": "A",
+            "2": "f",
+            "body": "{\n     \"individual_detail\": {\n       \"given_names\": \"Jane\",\n       \"surname\": \"Doe\"\n     }\n     }",
+            "initialized": true,
+            "method": "get",
+            "name": "Transactions - Get Transaction",
+            "params": {
+            },
+            "publish_as": "action",
+            "rank": 6,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAg",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAg\":{\"caption\":\"Transactions - Get Transaction\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"txn_11d2cf6b-d16d-495f-b433-c966908077ab\",\"path\":[\"id\"]},\"_p_product_id\":{\"ret_value\":\"text\",\"caption\":\"product_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"product_id\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"TOPUP\",\"path\":[\"type\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"SUCCESS\",\"path\":[\"status\"]},\"_p_channel_category\":{\"ret_value\":\"text\",\"caption\":\"channel_category\",\"sample_value\":\"BANK\",\"path\":[\"channel_category\"]},\"_p_channel_code\":{\"ret_value\":\"text\",\"caption\":\"channel_code\",\"sample_value\":null,\"path\":[\"channel_code\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"reference_id\"]},\"_p_account_identifier\":{\"ret_value\":\"text\",\"caption\":\"account_identifier\",\"sample_value\":null,\"path\":[\"account_identifier\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"IDR\",\"path\":[\"currency\"]},\"_p_amount\":{\"ret_value\":\"number\",\"caption\":\"amount\",\"sample_value\":1000000000,\"path\":[\"amount\"]},\"_p_net_amount\":{\"ret_value\":\"number\",\"caption\":\"net_amount\",\"sample_value\":1000000000,\"path\":[\"net_amount\"]},\"_p_cashflow\":{\"ret_value\":\"text\",\"caption\":\"cashflow\",\"sample_value\":\"MONEY_IN\",\"path\":[\"cashflow\"]},\"_p_settlement_status\":{\"ret_value\":\"text\",\"caption\":\"settlement_status\",\"sample_value\":\"SETTLED\",\"path\":[\"settlement_status\"]},\"_p_estimated_settlement_time\":{\"ret_value\":\"text\",\"caption\":\"estimated_settlement_time\",\"sample_value\":\"2023-06-02T11:06:40.921Z\",\"path\":[\"estimated_settlement_time\"]},\"_p_business_id\":{\"ret_value\":\"text\",\"caption\":\"business_id\",\"sample_value\":\"6479cd376f3f7add15ce89ef\",\"path\":[\"business_id\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"text\",\"caption\":\"updated\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"updated\"]},\"_p_fee.xendit_fee\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_fee\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_fee\"]},\"_p_fee.value_added_tax\":{\"ret_value\":\"number\",\"caption\":\"fee value_added_tax\",\"sample_value\":0,\"path\":[\"fee\",\"value_added_tax\"]},\"_p_fee.xendit_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_withholding_tax\"]},\"_p_fee.third_party_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee third_party_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"third_party_withholding_tax\"]},\"_p_fee.status\":{\"ret_value\":\"text\",\"caption\":\"fee status\",\"sample_value\":\"COMPLETED\",\"path\":[\"fee\",\"status\"]}}}}",
+            "url": "https://api.xendit.co/transactions/[id]",
+            "url_params": {
+                "AAj": {
+                    "key": "id",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAi": {
+            "0": "A",
+            "1": "A",
+            "2": "h",
+            "body": "{\n     \"individual_detail\": {\n       \"given_names\": \"Jane\",\n       \"surname\": \"Doe\"\n     }\n     }",
+            "initialized": true,
+            "method": "get",
+            "name": "Transactions - Get Transaction",
+            "params": {
+            },
+            "publish_as": "data",
+            "rank": 7,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAi",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAi\":{\"caption\":\"Transactions - Get Transaction\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"txn_11d2cf6b-d16d-495f-b433-c966908077ab\",\"path\":[\"id\"]},\"_p_product_id\":{\"ret_value\":\"text\",\"caption\":\"product_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"product_id\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"TOPUP\",\"path\":[\"type\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"SUCCESS\",\"path\":[\"status\"]},\"_p_channel_category\":{\"ret_value\":\"text\",\"caption\":\"channel_category\",\"sample_value\":\"BANK\",\"path\":[\"channel_category\"]},\"_p_channel_code\":{\"ret_value\":\"text\",\"caption\":\"channel_code\",\"sample_value\":null,\"path\":[\"channel_code\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"topupactivity-bf75ab15-314f-4118-bd7a-1485aa23c442\",\"path\":[\"reference_id\"]},\"_p_account_identifier\":{\"ret_value\":\"text\",\"caption\":\"account_identifier\",\"sample_value\":null,\"path\":[\"account_identifier\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"IDR\",\"path\":[\"currency\"]},\"_p_amount\":{\"ret_value\":\"number\",\"caption\":\"amount\",\"sample_value\":1000000000,\"path\":[\"amount\"]},\"_p_net_amount\":{\"ret_value\":\"number\",\"caption\":\"net_amount\",\"sample_value\":1000000000,\"path\":[\"net_amount\"]},\"_p_cashflow\":{\"ret_value\":\"text\",\"caption\":\"cashflow\",\"sample_value\":\"MONEY_IN\",\"path\":[\"cashflow\"]},\"_p_settlement_status\":{\"ret_value\":\"text\",\"caption\":\"settlement_status\",\"sample_value\":\"SETTLED\",\"path\":[\"settlement_status\"]},\"_p_estimated_settlement_time\":{\"ret_value\":\"text\",\"caption\":\"estimated_settlement_time\",\"sample_value\":\"2023-06-02T11:06:40.921Z\",\"path\":[\"estimated_settlement_time\"]},\"_p_business_id\":{\"ret_value\":\"text\",\"caption\":\"business_id\",\"sample_value\":\"6479cd376f3f7add15ce89ef\",\"path\":[\"business_id\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-06-02T11:06:40.915Z\",\"path\":[\"updated\"]},\"_p_fee.xendit_fee\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_fee\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_fee\"]},\"_p_fee.value_added_tax\":{\"ret_value\":\"number\",\"caption\":\"fee value_added_tax\",\"sample_value\":0,\"path\":[\"fee\",\"value_added_tax\"]},\"_p_fee.xendit_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee xendit_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"xendit_withholding_tax\"]},\"_p_fee.third_party_withholding_tax\":{\"ret_value\":\"number\",\"caption\":\"fee third_party_withholding_tax\",\"sample_value\":0,\"path\":[\"fee\",\"third_party_withholding_tax\"]},\"_p_fee.status\":{\"ret_value\":\"text\",\"caption\":\"fee status\",\"sample_value\":\"COMPLETED\",\"path\":[\"fee\",\"status\"]}}}}",
+            "url": "https://api.xendit.co/transactions/[id]",
+            "url_params": {
+                "AAm": {
+                    "key": "id",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAl": {
+            "0": "A",
+            "1": "A",
+            "2": "k",
+            "body": "{\n     \"individual_detail\": {\n       \"given_names\": \"Jane\",\n       \"surname\": \"Doe\"\n     }\n     }",
+            "method": "get",
+            "name": "Transactions - Get Transaction (copy) (copy)",
+            "params": {
+                "AAY": {
+                    "allow_blank": true,
+                    "doc": "Reference that will be searched. Search by reference is case sensitive and can be partial match.\n",
+                    "key": "reference_id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAZ": {
+                    "allow_blank": true,
+                    "doc": "Product_id that will be searched. Product_id search is an exact match and case sensitive.\n",
+                    "key": "product_id",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAa": {
+                    "allow_blank": true,
+                    "doc": "Account identifier that will be searched. Account identifier search is exact match case sensitive.",
+                    "key": "account_identifier",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAb": {
+                    "allow_blank": true,
+                    "doc": "Currency to filter. See our supported currencies. default: IDR\n",
+                    "key": "currency",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAc": {
+                    "allow_blank": true,
+                    "doc": "Transaction amount to search. This will be exact match.\n",
+                    "key": "amount",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 8,
+            "should_reinitialize": true,
+            "url": "https://api.xendit.co/transactions"
+        },
+        "AAn": {
+            "body": "{\n    \"currency\": \"IDR\",\n    \"amount\": 100000,\n    \"payment_method\": {\n        \"type\": \"EWALLET\",\n        \"reusability\": \"ONE_TIME_USE\",\n        \"ewallet\": {\n            \"channel_code\": \"SHOPEEPAY\",\n            \"channel_properties\": {\n                \"success_return_url\": \"https://your-redirect-website.com/success\"\n            }\n        }\n    },\n    \"customer_id\": \"cust-fe8cf70c-1bcd-4e39-8e13-d647739442e7\",\n    \"metadata\": {\n        \"sku\": \"ABCDEFGH\"\n    }\n}",
+            "doc_link": "https://developers.xendit.co/api-reference/payments-api/#list-payment-requests",
+            "initialized": true,
+            "method": "post",
+            "name": "Payments API - Payment Request",
+            "publish_as": "action",
+            "rank": 9,
+            "ret_value": "api.1696862739974x657171231604211700.plugin_api.AAn",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAn\":{\"caption\":\"Payments API - Payment Request\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"ewc_a317aa39-63b0-42c3-aadd-37922a7a5576\",\"path\":[\"id\"]},\"_p_country\":{\"ret_value\":\"text\",\"caption\":\"country\",\"sample_value\":\"ID\",\"path\":[\"country\"]},\"_p_amount\":{\"ret_value\":\"number\",\"caption\":\"amount\",\"sample_value\":100000,\"path\":[\"amount\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"sample_value\":\"IDR\",\"path\":[\"currency\"]},\"_p_business_id\":{\"ret_value\":\"text\",\"caption\":\"business_id\",\"sample_value\":\"6479cd376f3f7add15ce89ef\",\"path\":[\"business_id\"]},\"_p_reference_id\":{\"ret_value\":\"text\",\"caption\":\"reference_id\",\"sample_value\":\"148a3f95-1f8d-48a4-a39b-84cbc879b7d8\",\"path\":[\"reference_id\"]},\"_p_payment_method.id\":{\"ret_value\":\"text\",\"caption\":\"payment_method id\",\"sample_value\":\"pm-db9da533-4c06-4111-aa46-72f59ab80545\",\"path\":[\"payment_method\",\"id\"]},\"_p_payment_method.type\":{\"ret_value\":\"text\",\"caption\":\"payment_method type\",\"sample_value\":\"EWALLET\",\"path\":[\"payment_method\",\"type\"]},\"_p_payment_method.reference_id\":{\"ret_value\":\"text\",\"caption\":\"payment_method reference_id\",\"sample_value\":\"3f7c5e2a-c296-4ac0-8852-fd9f6c26384a\",\"path\":[\"payment_method\",\"reference_id\"]},\"_p_payment_method.description\":{\"ret_value\":\"text\",\"caption\":\"payment_method description\",\"sample_value\":null,\"path\":[\"payment_method\",\"description\"]},\"_p_payment_method.created\":{\"ret_value\":\"date_unix\",\"caption\":\"payment_method created\",\"sample_value\":\"2023-10-09T15:10:38.702484512Z\",\"path\":[\"payment_method\",\"created\"]},\"_p_payment_method.updated\":{\"ret_value\":\"date_unix\",\"caption\":\"payment_method updated\",\"sample_value\":\"2023-10-09T15:10:38.702484512Z\",\"path\":[\"payment_method\",\"updated\"]},\"_p_payment_method.card\":{\"ret_value\":\"text\",\"caption\":\"payment_method card\",\"sample_value\":null,\"path\":[\"payment_method\",\"card\"]},\"_p_payment_method.ewallet.channel_code\":{\"ret_value\":\"text\",\"caption\":\"payment_method ewallet channel_code\",\"sample_value\":\"SHOPEEPAY\",\"path\":[\"payment_method\",\"ewallet\",\"channel_code\"]},\"_p_payment_method.ewallet.channel_properties.success_return_url\":{\"ret_value\":\"text\",\"caption\":\"payment_method ewallet channel_properties success_return_url\",\"sample_value\":\"https://your-redirect-website.com/success\",\"path\":[\"payment_method\",\"ewallet\",\"channel_properties\",\"success_return_url\"]},\"_p_payment_method.ewallet.account.name\":{\"ret_value\":\"text\",\"caption\":\"payment_method ewallet account name\",\"sample_value\":null,\"path\":[\"payment_method\",\"ewallet\",\"account\",\"name\"]},\"_p_payment_method.ewallet.account.account_details\":{\"ret_value\":\"text\",\"caption\":\"payment_method ewallet account account_details\",\"sample_value\":null,\"path\":[\"payment_method\",\"ewallet\",\"account\",\"account_details\"]},\"_p_payment_method.ewallet.account.balance\":{\"ret_value\":\"text\",\"caption\":\"payment_method ewallet account balance\",\"sample_value\":null,\"path\":[\"payment_method\",\"ewallet\",\"account\",\"balance\"]},\"_p_payment_method.ewallet.account.point_balance\":{\"ret_value\":\"text\",\"caption\":\"payment_method ewallet account point_balance\",\"sample_value\":null,\"path\":[\"payment_method\",\"ewallet\",\"account\",\"point_balance\"]},\"_p_payment_method.direct_debit\":{\"ret_value\":\"text\",\"caption\":\"payment_method direct_debit\",\"sample_value\":null,\"path\":[\"payment_method\",\"direct_debit\"]},\"_p_payment_method.direct_bank_transfer\":{\"ret_value\":\"text\",\"caption\":\"payment_method direct_bank_transfer\",\"sample_value\":null,\"path\":[\"payment_method\",\"direct_bank_transfer\"]},\"_p_payment_method.over_the_counter\":{\"ret_value\":\"text\",\"caption\":\"payment_method over_the_counter\",\"sample_value\":null,\"path\":[\"payment_method\",\"over_the_counter\"]},\"_p_payment_method.virtual_account\":{\"ret_value\":\"text\",\"caption\":\"payment_method virtual_account\",\"sample_value\":null,\"path\":[\"payment_method\",\"virtual_account\"]},\"_p_payment_method.qr_code\":{\"ret_value\":\"text\",\"caption\":\"payment_method qr_code\",\"sample_value\":null,\"path\":[\"payment_method\",\"qr_code\"]},\"_p_payment_method.metadata\":{\"ret_value\":\"text\",\"caption\":\"payment_method metadata\",\"sample_value\":null,\"path\":[\"payment_method\",\"metadata\"]},\"_p_payment_method.billing_information.city\":{\"ret_value\":\"text\",\"caption\":\"payment_method billing_information city\",\"sample_value\":null,\"path\":[\"payment_method\",\"billing_information\",\"city\"]},\"_p_payment_method.billing_information.country\":{\"ret_value\":\"text\",\"caption\":\"payment_method billing_information country\",\"sample_value\":\"\",\"path\":[\"payment_method\",\"billing_information\",\"country\"]},\"_p_payment_method.billing_information.postal_code\":{\"ret_value\":\"text\",\"caption\":\"payment_method billing_information postal_code\",\"sample_value\":null,\"path\":[\"payment_method\",\"billing_information\",\"postal_code\"]},\"_p_payment_method.billing_information.province_state\":{\"ret_value\":\"text\",\"caption\":\"payment_method billing_information province_state\",\"sample_value\":null,\"path\":[\"payment_method\",\"billing_information\",\"province_state\"]},\"_p_payment_method.billing_information.street_line1\":{\"ret_value\":\"text\",\"caption\":\"payment_method billing_information street_line1\",\"sample_value\":null,\"path\":[\"payment_method\",\"billing_information\",\"street_line1\"]},\"_p_payment_method.billing_information.street_line2\":{\"ret_value\":\"text\",\"caption\":\"payment_method billing_information street_line2\",\"sample_value\":null,\"path\":[\"payment_method\",\"billing_information\",\"street_line2\"]},\"_p_payment_method.reusability\":{\"ret_value\":\"text\",\"caption\":\"payment_method reusability\",\"sample_value\":\"ONE_TIME_USE\",\"path\":[\"payment_method\",\"reusability\"]},\"_p_payment_method.status\":{\"ret_value\":\"text\",\"caption\":\"payment_method status\",\"sample_value\":\"ACTIVE\",\"path\":[\"payment_method\",\"status\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":null,\"path\":[\"description\"]},\"_p_metadata.sku\":{\"ret_value\":\"text\",\"caption\":\"metadata sku\",\"sample_value\":\"ABCDEFGH\",\"path\":[\"metadata\",\"sku\"]},\"_p_customer_id\":{\"ret_value\":\"text\",\"caption\":\"customer_id\",\"sample_value\":\"cust-fe8cf70c-1bcd-4e39-8e13-d647739442e7\",\"path\":[\"customer_id\"]},\"_p_capture_method\":{\"ret_value\":\"text\",\"caption\":\"capture_method\",\"sample_value\":\"AUTOMATIC\",\"path\":[\"capture_method\"]},\"_p_initiator\":{\"ret_value\":\"text\",\"caption\":\"initiator\",\"sample_value\":null,\"path\":[\"initiator\"]},\"_p_card_verification_results\":{\"ret_value\":\"text\",\"caption\":\"card_verification_results\",\"sample_value\":null,\"path\":[\"card_verification_results\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2023-10-09T15:10:38.82186949Z\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2023-10-09T15:10:38.82186949Z\",\"path\":[\"updated\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"REQUIRES_ACTION\",\"path\":[\"status\"]},\"_p_actions\":{\"ret_value\":\"list.api.1696862739974x657171231604211700.plugin_api.AAn.actions\",\"caption\":\"actions\",\"path\":[\"actions\"]},\"_p_failure_code\":{\"ret_value\":\"text\",\"caption\":\"failure_code\",\"sample_value\":null,\"path\":[\"failure_code\"]},\"_p_channel_properties\":{\"ret_value\":\"text\",\"caption\":\"channel_properties\",\"sample_value\":null,\"path\":[\"channel_properties\"]},\"_p_shipping_information\":{\"ret_value\":\"text\",\"caption\":\"shipping_information\",\"sample_value\":null,\"path\":[\"shipping_information\"]},\"_p_items\":{\"ret_value\":\"text\",\"caption\":\"items\",\"sample_value\":null,\"path\":[\"items\"]}}},\"plugin_api.AAn.actions\":{\"caption\":\"Payments API - Payment Request action\",\"fields\":{\"_p_action\":{\"ret_value\":\"text\",\"caption\":\"action\",\"sample_value\":\"AUTH\",\"path\":[\"action\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ewallet-mock-connector.xendit.co/v1/ewallet_connector/checkouts?token=cki1frj29ofgjgmv5n1g\",\"path\":[\"url\"]},\"_p_url_type\":{\"ret_value\":\"text\",\"caption\":\"url_type\",\"sample_value\":\"DEEPLINK\",\"path\":[\"url_type\"]},\"_p_method\":{\"ret_value\":\"text\",\"caption\":\"method\",\"sample_value\":\"GET\",\"path\":[\"method\"]},\"_p_qr_code\":{\"ret_value\":\"text\",\"caption\":\"qr_code\",\"sample_value\":\"test-qr-string\",\"path\":[\"qr_code\"]}}}}",
+            "url": "https://api.xendit.co/payment_requests"
+        }
+    },
+    "human": "Xendit Payments",
+    "shared_headers": {
+        "AAD": {
+            "key": "Content-Type",
+            "private": true,
+            "value": "application/json",
+            "visibility": "hidden"
+        },
+        "AAE": {
+            "key": "Accept",
+            "private": true,
+            "value": "application/json",
+            "visibility": "hidden"
+        }
+    }
+}

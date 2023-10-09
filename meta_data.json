@@ -1,0 +1,10 @@
+{
+    "categories": {
+        "0": "payment"
+    },
+    "description": "Xendit serves as a payment gateway, streamlining payment processes for businesses, ensuring security, and enhancing simplicity for customers.\n\nFor inquiries regarding expanding this integration with additional API calls, please reach out to us at info@nocodeventure.com.\n\nWe'll be releasing a paid version with much more features!",
+    "image": "//meta-l.cdn.bubble.io/f1696862829201x878181897624434400/xendit-header-logo.svg",
+    "license": "open_source",
+    "name": "Xendit Payments Free Version",
+    "plugin_instructions": "Dashboard URL: https://dashboard.xendit.co/get-started\n\nDocs: https://docs.xendit.co/\n\nAPI Keys: https://dashboard.xendit.co/settings/developers#api-keys\n\nAPI Reference: https://developers.xendit.co/api-reference/\n"
+}
